@@ -37,7 +37,7 @@ namespace JohannesFortmann
             this.btn_berechnen = new System.Windows.Forms.Button();
             this.txt_gewicht = new System.Windows.Forms.TextBox();
             this.txt_goesse = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_bmi = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -92,6 +92,7 @@ namespace JohannesFortmann
             this.btn_berechnen.TabIndex = 6;
             this.btn_berechnen.Text = "Berechnen";
             this.btn_berechnen.UseVisualStyleBackColor = true;
+            this.btn_berechnen.Click += new System.EventHandler(this.btn_berechnen_Click);
             // 
             // txt_gewicht
             // 
@@ -109,12 +110,12 @@ namespace JohannesFortmann
             this.txt_goesse.TabIndex = 8;
             this.txt_goesse.Text = "1.80";
             // 
-            // textBox3
+            // txt_bmi
             // 
-            this.textBox3.Location = new System.Drawing.Point(305, 444);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(250, 47);
-            this.textBox3.TabIndex = 9;
+            this.txt_bmi.Location = new System.Drawing.Point(305, 444);
+            this.txt_bmi.Name = "txt_bmi";
+            this.txt_bmi.Size = new System.Drawing.Size(250, 47);
+            this.txt_bmi.TabIndex = 9;
             // 
             // label1
             // 
@@ -132,7 +133,7 @@ namespace JohannesFortmann
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1198, 821);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt_bmi);
             this.Controls.Add(this.txt_goesse);
             this.Controls.Add(this.txt_gewicht);
             this.Controls.Add(this.btn_berechnen);
@@ -159,7 +160,7 @@ namespace JohannesFortmann
         private System.Windows.Forms.Button btn_berechnen;
         private System.Windows.Forms.TextBox txt_gewicht;
         private System.Windows.Forms.TextBox txt_goesse;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_bmi;
         private System.Windows.Forms.Label label1;
     }
 }
